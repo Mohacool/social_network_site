@@ -1,0 +1,36 @@
+
+body{
+    overflow-x:hidden !important;
+    
+}
+
+.main_content{
+    width:50%;
+    height:95%;
+    margin:10px auto;
+    background-color:#fff;
+    border:2px solid #e6e6e6;
+    padding: 40px 50px;
+}
+
+.overlap-text{
+    position:relative;
+}
+
+.overlap-text a{
+    position: absolute;
+    top:8px;
+    right: 10px;
+    font-size:14px;
+    text-decoration:none;
+    font-family: 'Overpass Mono';
+}
+
+@media screen and (max-width:920px){
+
+    .main_content{
+        width:70%;
+        
+    }
+    
+}

@@ -1,0 +1,40 @@
+.lol{
+    border: 1px solid green;
+}
+
+body{
+    overflow-x:hidden !important;
+    
+}
+
+.main_content{
+    width:50%;
+    height:95%;
+    margin:10px auto;
+    background-color:#fff;
+    border:2px solid #e6e6e6;
+    padding: 40px 50px;
+    
+}
+.icon{
+    width:45px;
+}
+
+.lock{
+    
+    
+    padding-top:2px;
+}
+
+.input-group{
+    padding-top:20px;
+}
+
+@media screen and (max-width:920px){
+
+    .main_content{
+        width:70%;
+        
+    }
+    
+}

@@ -1,0 +1,37 @@
+<?php
+    session_start();
+    include("includes/connection.php");
+    
+    if (isset($_POST['login'])){
+        $email = $_POST['email'];
+        $pass = $_POST['pass'];
+
+        $select_user = "select * from users where user_email='$email' AND user_pass='$pass'
+        and status='verified'";
+
+        $query = mysqli_query($con,$select_user);
+        $check_user = mysqli_num_rows($query);
+
+        if ($check_user == 1){
+            $_SESSION['user_email'] = $email;
+
+            echo "<script>
+                window.open('home.php','_self');
+            
+            </script>";
+        }
+        else{
+            echo "
+                <script>
+                    Swal.fire(
+                        'Error',
+                        'Your email or password is incorrect',
+                        'error'
+                    );
+                </script>
+            ";
+        }
+        
+    }
+
+?>
