@@ -80,7 +80,7 @@
         user_email,user_gender,user_image,user_cover,user_reg_date,status,posts)
         
         values('$first_name','$last_name','$username','Default status!','$pass','$email',
-        '$gender','$profile_pic','main_pic.jpg',NOW(),'$status','$posts')";
+        '$gender','$profile_pic','cover2.jpg',NOW(),'$status','$posts')";
 
         
         
